@@ -9,7 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var timeLabel: UILabel!
+    
+    @IBAction func startButton(_ sender: Any) {
+    }
+    
+    @IBAction func stopButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func segueSetting(_ sender: Any) {
+        performSegue(withIdentifier: "setting", sender: nil)
+    }
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
